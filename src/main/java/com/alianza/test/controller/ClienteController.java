@@ -30,7 +30,7 @@ public class ClienteController {
         return new ResponseEntity<>(service.findById(id), HttpStatus.OK);
     }
 
-    @PutMapping("/update")
+    @PutMapping
     public ResponseEntity<Cliente> update(@RequestBody Cliente Cliente) throws ResourceNotFoundException {
         return new ResponseEntity<>(service.update(Cliente), HttpStatus.OK);
     }

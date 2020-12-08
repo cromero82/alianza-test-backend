@@ -14,6 +14,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.Optional;
 
 @Service
@@ -23,6 +25,8 @@ public class ClienteService extends BaseService<Cliente> implements IClienteServ
 
     @Override
     public Cliente create(Cliente cliente) {
+        //cliente.setFechaCreacion(new Date());
+        cliente.setSharedKey(cliente.getNombre().replace(" ",""));
         return repository.save(cliente);
     }
 

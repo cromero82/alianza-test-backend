@@ -1,0 +1,1 @@
+SELECT setval('cliente_id_seq', (SELECT MAX(id) FROM cliente)+1);
