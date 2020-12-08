@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Optional;
 
 @Service
@@ -64,7 +65,8 @@ public class ClienteService extends BaseService<Cliente> implements IClienteServ
     
     public ResultSearchData<Cliente> search(PageablePrimitive pag, String parametro) {
         Pageable paging = PageRequest.of(pag.getPage(), pag.getSize(), pag.getSortOrder().equals("asc") ? Sort.by(pag.getSortBy()).ascending() : Sort.by(pag.getSortBy()).descending());
-        Page<Cliente> pagedResult = repository.findAll(paging);
+        parametro = parametro.toUpperCase();
+        Page<Cliente> pagedResult = repository.findAllByNombreContains(paging, parametro);
         return (ResultSearchData<Cliente>) this.getResultSearch(pagedResult);
     }
 }

@@ -7,4 +7,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface IClienteRepository extends CrudRepository<Cliente,Integer> {
     Page<Cliente> findAll(Pageable paging);
+    Page<Cliente> findAllByNombreContains(Pageable paging, String param);
 }
