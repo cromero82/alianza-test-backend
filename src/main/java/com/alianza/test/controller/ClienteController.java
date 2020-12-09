@@ -1,5 +1,6 @@
 package com.alianza.test.controller;
 
+import com.alianza.test.exception.InternalServerException;
 import com.alianza.test.exception.ResourceNotFoundException;
 import com.alianza.test.model.entity.Cliente;
 import com.alianza.test.service.interfaz.IClienteService;
@@ -21,7 +22,7 @@ public class ClienteController {
     private IClienteService service;
 
     @PostMapping
-    public ResponseEntity<Cliente> create(@RequestBody Cliente Cliente) throws ResourceNotFoundException {
+    public ResponseEntity<Cliente> create(@RequestBody Cliente Cliente) throws ResourceNotFoundException, InternalServerException {
         return new ResponseEntity<>(service.create(Cliente), HttpStatus.OK);
     }
 

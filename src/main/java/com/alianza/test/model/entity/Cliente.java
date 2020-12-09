@@ -15,7 +15,7 @@ import java.util.Date;
 @Getter
 @Setter
 @Entity
-@Table(name = "cliente", uniqueConstraints = @UniqueConstraint(name = "cliente_uk", columnNames = "correo"))
+@Table(name = "cliente", uniqueConstraints = @UniqueConstraint(name = "cliente_uk", columnNames = "shared_key"))
 @SQLDelete(sql = "UPDATE leccion SET eliminado = current_date WHERE id = ?", check = ResultCheckStyle.COUNT)
 @Where(clause = "eliminado = to_date('09-09-1999','dd-mm-yyyy')")
 public class Cliente implements Serializable {
