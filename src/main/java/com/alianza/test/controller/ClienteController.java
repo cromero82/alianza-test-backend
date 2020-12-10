@@ -21,9 +21,9 @@ public class ClienteController {
     @Autowired
     public IClienteService service;
 
-    @GetMapping("/hello")
-    public ResponseEntity<String> helloWorld(){
-        String entity = "hello World!";
+    @GetMapping("/healt")
+    public ResponseEntity<String> health(){
+        String entity = "ok running!";
         return new ResponseEntity<>(entity, HttpStatus.OK);
     }
 
