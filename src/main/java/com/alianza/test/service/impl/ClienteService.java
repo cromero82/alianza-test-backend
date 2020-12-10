@@ -5,7 +5,6 @@ import com.alianza.test.exception.ResourceNotFoundException;
 import com.alianza.test.model.entity.Cliente;
 import com.alianza.test.model.repository.IClienteRepository;
 import com.alianza.test.service.interfaz.IClienteService;
-import com.alianza.test.service.interfaz.IGenericService;
 import com.alianza.test.shared.PageablePrimitive;
 import com.alianza.test.shared.ResultSearchData;
 import org.slf4j.Logger;
@@ -17,12 +16,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.util.Base64;
 import java.util.Optional;
 
 @Service

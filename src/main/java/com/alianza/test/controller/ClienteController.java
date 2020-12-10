@@ -19,11 +19,17 @@ import org.springframework.web.bind.annotation.*;
 public class ClienteController {
 
     @Autowired
-    private IClienteService service;
+    public IClienteService service;
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> helloWorld(){
+        String entity = "hello World!";
+        return new ResponseEntity<>(entity, HttpStatus.OK);
+    }
 
     @PostMapping
     public ResponseEntity<Cliente> create(@RequestBody Cliente Cliente) throws ResourceNotFoundException, InternalServerException {
-        return new ResponseEntity<>(service.create(Cliente), HttpStatus.OK);
+        return new ResponseEntity<>(service.create(Cliente), HttpStatus.CREATED);
     }
 
     @GetMapping("/findById")
