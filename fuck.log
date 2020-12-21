@@ -1,0 +1,67 @@
+2020-Dec-20 23:59:52 [restartedMain] INFO  c.a.t.AlianzaClientesApplication                   - Starting AlianzaClientesApplication using Java 1.8.0_271 on carlosR-HP-Laptop-15-dw0la with PID 28838 (/home/carlosr/repos/alianza-test-backend/target/classes started by carlosr in /home/carlosr/repos/alianza-test-backend)
+2020-Dec-20 23:59:52 [restartedMain] INFO  c.a.t.AlianzaClientesApplication                   - No active profile set, falling back to default profiles: default
+2020-Dec-20 23:59:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-Dec-20 23:59:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-Dec-20 23:59:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-Dec-20 23:59:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2020-Dec-20 23:59:53 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8282 (http)
+2020-Dec-20 23:59:53 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8282"]
+2020-Dec-20 23:59:53 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2020-Dec-20 23:59:53 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-Dec-20 23:59:53 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2020-Dec-20 23:59:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 993 ms
+2020-Dec-20 23:59:53 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor                     - Initializing ExecutorService 'applicationTaskExecutor'
+2020-Dec-20 23:59:53 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2020-Dec-20 23:59:53 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2020-Dec-20 23:59:53 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-Dec-20 23:59:53 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter         - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-Dec-20 23:59:54 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping         - 9 mappings in 'requestMappingHandlerMapping'
+2020-Dec-20 23:59:54 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping                  - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-Dec-20 23:59:54 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-Dec-20 23:59:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2020-Dec-20 23:59:54 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8282"]
+2020-Dec-20 23:59:54 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8282 (http) with context path ''
+2020-Dec-20 23:59:54 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2020-Dec-20 23:59:54 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-Dec-20 23:59:54 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2020-Dec-20 23:59:54 [restartedMain] INFO  c.a.t.AlianzaClientesApplication                   - Started AlianzaClientesApplication in 2.7 seconds (JVM running for 3.466)
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - Detected StandardServletMultipartResolver
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - Detected AcceptHeaderLocaleResolver
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - Detected FixedThemeResolver
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@19c04a26
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1c48aee6
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 2 ms
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - POST "/v1/cliente-api", parameters={}
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped to com.alianza.test.controller.ClienteController#create(Cliente)
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor   - Read "application/json;charset=UTF-8" to [com.alianza.test.model.entity.Cliente@43fb95d8]
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] INFO  c.a.t.s.i.ClienteService                           - An INFO Message
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] WARN  c.a.t.s.i.ClienteService                           - A WARN Message
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] ERROR c.a.t.s.i.ClienteService                           - An ERROR Message
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] ERROR o.h.e.j.s.SqlExceptionHelper                       - ERROR: duplicate key value violates unique constraint "cliente_uk"
+  Detail: Key (shared_key)=(ddd) already exists.
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] ERROR c.a.t.s.i.ClienteService                           - log-control Error creando cliente > com.alianza.test.model.entity.Cliente@43fb95d8
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver        - Resolved [com.alianza.test.exception.InternalServerException: excepcion-control: Error Registrando cliente: ddd
+ Mensaje: could not execute statement; SQL [n/a]; constraint [cliente_uk]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement, 
+ causado por: org.hibernate.exception.ConstraintViolationException: could not execute statement, 
+]
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - Completed 500 INTERNAL_SERVER_ERROR
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - "ERROR" dispatch for POST "/error", parameters={}
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor            - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor            - Writing [{timestamp=Mon Dec 21 00:02:55 COT 2020, status=500, error=Internal Server Error, trace=com.alianza. (truncated)...]
+2020-Dec-21 00:02:55 [http-nio-8282-exec-1] DEBUG o.s.w.s.DispatcherServlet                          - Exiting from "ERROR" dispatch, status 500
+2020-Dec-21 00:02:58 [http-nio-8282-exec-4] DEBUG o.s.w.s.DispatcherServlet                          - GET "/v1/cliente-api/search?param=&page=0&size=5&sortBy=nombre&sortOrder=asc", parameters={masked}
+2020-Dec-21 00:02:58 [http-nio-8282-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped to com.alianza.test.controller.ClienteController#search(int, int, String, String, String)
+2020-Dec-21 00:02:58 [http-nio-8282-exec-4] INFO  c.a.t.s.i.ClienteService                           - SEARCH - A INFO Message
+2020-Dec-21 00:02:58 [http-nio-8282-exec-4] WARN  c.a.t.s.i.ClienteService                           - SEARCH - A WARN Message
+2020-Dec-21 00:02:58 [http-nio-8282-exec-4] ERROR c.a.t.s.i.ClienteService                           - SEARCH - A ERR Message
+2020-Dec-21 00:02:58 [http-nio-8282-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor            - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-Dec-21 00:02:58 [http-nio-8282-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor            - Writing [com.alianza.test.shared.ResultSearchData@489dac6f]
+2020-Dec-21 00:02:58 [http-nio-8282-exec-4] DEBUG o.s.w.s.DispatcherServlet                          - Completed 200 OK
+2020-Dec-21 00:03:33 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-Dec-21 00:03:33 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor                     - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-Dec-21 00:03:33 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2020-Dec-21 00:03:33 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.

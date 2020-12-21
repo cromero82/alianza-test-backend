@@ -3,6 +3,7 @@ package com.alianza.test.controller;
 import com.alianza.test.exception.InternalServerException;
 import com.alianza.test.exception.ResourceNotFoundException;
 import com.alianza.test.model.entity.Cliente;
+import com.alianza.test.service.impl.ClienteService;
 import com.alianza.test.service.interfaz.IClienteService;
 import com.alianza.test.shared.PageablePrimitive;
 import com.alianza.test.shared.ResultSearchData;
