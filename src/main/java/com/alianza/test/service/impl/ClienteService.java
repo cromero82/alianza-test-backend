@@ -30,12 +30,6 @@ public class ClienteService extends BaseService<Cliente> implements IClienteServ
 
     @Override
     public Cliente create(Cliente cliente) throws InternalServerException {
-        logger.trace("A TRACE Message");
-        logger.debug("A DEBUG Message");
-        logger.info("An INFO Message");
-        logger.warn("A WARN Message");
-        logger.error("An ERROR Message");
-
         cliente.setSharedKey(cliente.getNombre().replace(" ",""));
         try {
             return repository.save(cliente);
