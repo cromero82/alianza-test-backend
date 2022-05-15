@@ -3,8 +3,8 @@ package com.alianza.test.service.impl;
 import com.alianza.test.exception.InternalServerException;
 import com.alianza.test.exception.ResourceNotFoundException;
 import com.alianza.test.model.entity.Empleado;
-import com.alianza.test.model.repository.IClienteRepository;
-import com.alianza.test.service.interfaz.IClienteService;
+import com.alianza.test.model.repository.IEmpleadoRepository;
+import com.alianza.test.service.interfaz.IEmpleadoService;
 import com.alianza.test.shared.PageablePrimitive;
 import com.alianza.test.shared.ResultSearchData;
 import org.slf4j.Logger;
@@ -19,11 +19,11 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class ClienteService extends BaseService<Empleado> implements IClienteService {
+public class EmpleadoService extends BaseService<Empleado> implements IEmpleadoService {
     @Autowired
-    private IClienteRepository repository;
+    private IEmpleadoRepository repository;
 
-    private static final Logger logger = LoggerFactory.getLogger(ClienteService.class);
+    private static final Logger logger = LoggerFactory.getLogger(EmpleadoService.class);
 
     @Value( "${logging.custom.title}" )
     private String loginTitle;

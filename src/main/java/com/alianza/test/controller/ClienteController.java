@@ -3,7 +3,7 @@ package com.alianza.test.controller;
 import com.alianza.test.exception.InternalServerException;
 import com.alianza.test.exception.ResourceNotFoundException;
 import com.alianza.test.model.entity.Empleado;
-import com.alianza.test.service.interfaz.IClienteService;
+import com.alianza.test.service.interfaz.IEmpleadoService;
 import com.alianza.test.shared.PageablePrimitive;
 import com.alianza.test.shared.ResultSearchData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 public class ClienteController {
 
     @Autowired
-    public IClienteService service;
+    public IEmpleadoService service;
 
     @GetMapping("/healt")
     public ResponseEntity<String> health(){
