@@ -19,6 +19,7 @@ public class ActividadDto {
 
     private EmpleadoDto empleadoAsignado;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "es_CO", timezone = "GMT-5")
     private Date fechaCreacion;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "es_CO", timezone = "GMT-5")
@@ -31,8 +32,4 @@ public class ActividadDto {
     private Date eliminado = new Date("1999/09/09");
 
     private int diasRetraso;
-
-//    public ActividadDto(Actividad obj) {
-//        this.id = obj.getId();
-//    }
 }
