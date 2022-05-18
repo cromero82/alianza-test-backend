@@ -1,5 +1,6 @@
 package com.alianza.test.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -44,10 +45,12 @@ public class Actividad implements Serializable {
 
     @Column(name = "fechaPlaneadaFinalizacion")
     @Temporal(TemporalType.DATE)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "es_CO", timezone = "GMT-5")
     private Date fechaPlaneadaFinalizacion;
 
     @Column(name = "fechaFinalizacion")
     @Temporal(TemporalType.DATE)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "es_CO", timezone = "GMT-5")
     private Date fechaFinalizacion;
 
     @Column(name = "eliminado")
